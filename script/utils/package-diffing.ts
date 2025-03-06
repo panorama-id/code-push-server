@@ -4,10 +4,10 @@
 import * as diffErrorUtils from "./diff-error-handling";
 import * as env from "../environment";
 import * as fs from "fs";
-import * as hashUtils from "../utils/hash-utils";
+import * as hashUtils from "./hash-utils";
 import * as path from "path";
 import * as q from "q";
-import * as security from "../utils/security";
+import * as security from "./security";
 import * as semver from "semver";
 import * as storageTypes from "../storage/storage";
 import * as stream from "stream";
