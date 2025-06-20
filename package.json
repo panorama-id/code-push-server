@@ -4,7 +4,7 @@
   "description": "Source code for the CodePush service API",
   "main": "./script/server.js",
   "scripts": {
-    "start": "node ./bin/script/server.js",
+    "start": "node -r dotenv/config ./bin/script/server.js dotenv_config_path=.env dotenv_config_silent=true",
     "start:env": "node -r dotenv/config ./bin/script/server.js dotenv_config_path=.env dotenv_config_silent=true",
     "clean": "rimraf bin",
     "build": "tsc && shx cp -r script/views ./bin/script",
