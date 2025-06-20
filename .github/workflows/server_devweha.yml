@@ -28,6 +28,7 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+          npm run start
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -63,6 +64,3 @@ jobs:
           app-name: 'devweha'
           slot-name: 'Production'
           package: .
-      - name: run the app
-        run: |
-          npm run start
